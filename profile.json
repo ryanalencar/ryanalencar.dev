@@ -1,0 +1,517 @@
+{
+  "source": {
+    "type": "linkedin_profile_pdf",
+    "extracted_from": "LinkedIn Profile.pdf",
+    "note": "Dados extraídos exclusivamente do PDF fornecido."
+  },
+  "profile": {
+    "full_name": "Ryan Alencar",
+    "headline": "Tech Leader & Senior Software Engineer | Full Stack Developer | ReactJS | NodeJs | NextJS | TypeScript | NestJs",
+    "location": {
+      "city": "Fortaleza",
+      "state": "Ceará",
+      "country": "Brazil",
+      "full": "Fortaleza, Ceará, Brazil"
+    },
+    "summary": "Hello! I'm a Senior Software Engineer with over six years of experience building and scaling Full Stack applications across diverse sectors like e-commerce, finance, telecommunications and educational. Key Contributions: - 40% increase in development efficiency and 25% reduction in front-end development time: Spearheaded the development of a scalable design system at Banco do Nordeste, creating and maintaining a reusable React component library. - 30% increased developer productivity and 20% reduced onboarding time: Significantly improved developer workflows by designing and implementing a comprehensive documentation platform. - 60% increase in data analysis efficiency: Transformed complex financial data into user-friendly visualizations through the development of an automated financial data processing system. Currently, I'm thriving at SONDA IT, contributing my full-stack expertise to Banco do Nordeste projects. I excel at leveraging modern technologies like React, React Native, Node.js, and TypeScript to deliver robust and high-performing applications within agile development environments. Soft Skills: Throughout my career, my colleagues have praised me for my ability to collaborate effectively, communicate clearly, and mentor junior developers. My strengths include navigating complex projects, proactively identifying challenges, and developing innovative solutions. In addition to my positive attitude and strong work ethic, I am known for my ability to deliver high-quality results within budget and on time. My ability to adapt to changing priorities allows me to thrive in fast-paced environments."
+  },
+  "contact": {
+    "phone": "85991439952",
+    "email": "ryanalencarbarbosa1701@gmail.com",
+    "linkedin_url": "www.linkedin.com/in/ryanalencar"
+  },
+  "top_skills": [
+    "Nodejs",
+    "Swagger",
+    "SOLID"
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Full Professional"
+    },
+    {
+      "language": "Portuguese",
+      "proficiency": "Native or Bilingual"
+    },
+    {
+      "language": "French",
+      "proficiency": "Elementary"
+    }
+  ],
+  "certifications": [
+    "Desafio de Micro Saas - Desafio Micro Saas",
+    "Cyber Threat Management",
+    "NodeJS",
+    "React JS"
+  ],
+  "skills": {
+    "hard_skills": {
+      "proficient": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Vite",
+        "Redux Toolkit",
+        "React Native",
+        "Expo",
+        "Node.Js",
+        "NestJs",
+        "AdonisJs",
+        "Git",
+        "GitHub",
+        "GitLab",
+        "Tailwind CSS",
+        "Storybook",
+        "Design Systems"
+      ],
+      "intermediate": [
+        "Jest",
+        "React Testing Library",
+        "Jenkins"
+      ],
+      "beginner": [
+        "AWS",
+        "Google Cloud Platform",
+        "GraphQL"
+      ]
+    },
+    "soft_skills": [
+      "Collaboration",
+      "Clear communication",
+      "Mentoring junior developers",
+      "Navigating complex projects",
+      "Proactive problem identification",
+      "Innovative solution development",
+      "Positive attitude",
+      "Strong work ethic",
+      "On-time delivery",
+      "Adaptability to changing priorities"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Stefanini LATAM",
+      "position": "Senior Software Engineer",
+      "employment_type": null,
+      "location": null,
+      "start_date": "2023-07",
+      "end_date": null,
+      "is_current": true,
+      "duration_text": "July 2023 - Present (2 years 9 months)",
+      "allocation": "Banco do Nordeste (BNB)",
+      "description": "Improved consistency across all BNB applications, impacting millions of users, by architecting and implementing a scalable Design System that standardized UI components. Developed a React library for the Design System, leading to a 40% increase in development efficiency and reducing front-end development time by 25%. The library addressed the challenge of maintaining a cohesive user interface across multiple platforms. Facilitated seamless integration of design tokens into various technology stacks, including iOS, Android, React, and React Native, using an API built with NestJS. This integration ensured a unified design experience across different applications. Enhanced user satisfaction and engagement, reflected in a 15% increase in positive user feedback, through a more consistent and intuitive user experience across all digital products. Increased developer productivity by 30% and reduced onboarding time by 20% with the development of a comprehensive documentation platform using Docusaurus. This platform addressed the challenge of providing clear and accessible project information to developers, supporting efficient knowledge transfer and collaboration.",
+      "highlights": [
+        "Architected and implemented a scalable Design System for BNB applications",
+        "Built a reusable React component library",
+        "Integrated design tokens across iOS, Android, React and React Native via NestJS API",
+        "Created a documentation platform with Docusaurus"
+      ],
+      "impact_metrics": [
+        {
+          "metric": "development_efficiency_increase",
+          "value": "40%"
+        },
+        {
+          "metric": "frontend_development_time_reduction",
+          "value": "25%"
+        },
+        {
+          "metric": "positive_user_feedback_increase",
+          "value": "15%"
+        },
+        {
+          "metric": "developer_productivity_increase",
+          "value": "30%"
+        },
+        {
+          "metric": "onboarding_time_reduction",
+          "value": "20%"
+        }
+      ],
+      "technologies": [
+        "React",
+        "NestJS",
+        "Docusaurus",
+        "Design Systems",
+        "Design Tokens",
+        "React Native",
+        "iOS",
+        "Android"
+      ]
+    },
+    {
+      "company": "Tecla T",
+      "position": "Senior Software Engineer",
+      "employment_type": null,
+      "location": "Fortaleza, Ceará, Brazil",
+      "start_date": "2021-04",
+      "end_date": "2023-07",
+      "is_current": false,
+      "duration_text": "April 2021 - July 2023 (2 years 4 months)",
+      "description": "Delivered full-stack development solutions for various clients at Tecla T, utilizing a range of technologies to meet their unique needs.",
+      "projects": [
+        {
+          "name": "Agora eu Pago",
+          "description": "Developed a scalable real-time chat system using Nx monorepo architecture, enabling efficient communication between debtors and creditors for debt negotiation. Implemented backend logic with NestJS to manage user interactions and facilitate secure data processing. Enabled real-time messaging via Socket.IO. Built a dynamic front-end interface utilizing Vite, Chakra UI, Redux, and React Query.",
+          "technologies": [
+            "Nx",
+            "NestJS",
+            "Socket.IO",
+            "Vite",
+            "Chakra UI",
+            "Redux",
+            "React Query"
+          ]
+        },
+        {
+          "name": "Febracis",
+          "description": "Redesigned and modernized a gamified sales incentive system using React, Redux, and TypeScript, enhancing user engagement and sales flow.",
+          "technologies": [
+            "React",
+            "Redux",
+            "TypeScript"
+          ]
+        },
+        {
+          "name": "Dominio Financeira",
+          "description": "Developed an automated financial data processing system using Adonis backend (Docker, PostgreSQL, Nginx) and a Vite frontend with Redux and React Query. Transformed complex financial data into user-friendly graphs for streamlined client analysis.",
+          "technologies": [
+            "Adonis",
+            "Docker",
+            "PostgreSQL",
+            "Nginx",
+            "Vite",
+            "Redux",
+            "React Query"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Pasquali Solution",
+      "position": "Software Engineer | Front End",
+      "employment_type": null,
+      "location": "São Paulo, São Paulo, Brazil",
+      "start_date": "2020-11",
+      "end_date": "2021-04",
+      "is_current": false,
+      "duration_text": "November 2020 - April 2021 (6 months)",
+      "allocation": "Safe Web",
+      "description": "Improved the credit purchase process efficiency by 30% for Brazil's 2nd largest digital certificate issuer through the development of a micro frontend architecture using React. Enhanced payment security and accuracy by integrating the Safe2Pay platform, which facilitated secure payment processing and dynamic credit calculations based on purchase amounts. Optimized user experience and flow efficiency by redesigning the credit purchase pathway, resulting in a 25% increase in successful transactions and reduced user abandonment rates.",
+      "highlights": [
+        "Built micro frontend architecture using React",
+        "Integrated Safe2Pay",
+        "Redesigned credit purchase flow"
+      ],
+      "impact_metrics": [
+        {
+          "metric": "credit_purchase_process_efficiency_increase",
+          "value": "30%"
+        },
+        {
+          "metric": "successful_transactions_increase",
+          "value": "25%"
+        }
+      ],
+      "technologies": [
+        "React",
+        "Micro Frontends",
+        "Safe2Pay"
+      ]
+    },
+    {
+      "company": "Dell Lead",
+      "position": "Software Engineer | Front End",
+      "employment_type": null,
+      "location": "Fortaleza, Ceará, Brazil",
+      "start_date": "2020-06",
+      "end_date": "2020-11",
+      "is_current": false,
+      "duration_text": "June 2020 - November 2020 (6 months)",
+      "description": "Increased children's engagement and knowledge retention by 40% through the development of a React Native education application with gamified learning experiences. Improved user inclusivity and intuitiveness by implementing best practices in accessibility, UX, and UI design. Enhanced team collaboration and development efficiency by 25% by utilizing Scrum methodologies. Boosted the application's functionality and user appeal by contributing innovative ideas.",
+      "highlights": [
+        "Developed React Native educational app",
+        "Applied accessibility, UX and UI best practices",
+        "Worked with Scrum"
+      ],
+      "impact_metrics": [
+        {
+          "metric": "engagement_and_knowledge_retention_increase",
+          "value": "40%"
+        },
+        {
+          "metric": "team_collaboration_and_development_efficiency_increase",
+          "value": "25%"
+        }
+      ],
+      "technologies": [
+        "React Native",
+        "Accessibility",
+        "UX",
+        "UI",
+        "Scrum"
+      ]
+    },
+    {
+      "company": "NEPEN",
+      "position": "Software Developer | Front End",
+      "employment_type": null,
+      "location": "Fortaleza, Ceará, Brazil",
+      "start_date": "2020-01",
+      "end_date": "2020-06",
+      "is_current": false,
+      "duration_text": "January 2020 - June 2020 (6 months)",
+      "description": "Enhanced the interactivity and responsiveness of IoT projects by 30% through the development of dynamic user interfaces using Angular and React.js. Improved project delivery speed by 25% by working within an Agile team using Scrum methodologies. Increased user satisfaction by 40% by implementing user-centered design principles and creating high-fidelity prototypes with Figma.",
+      "highlights": [
+        "Built dynamic interfaces for IoT projects",
+        "Used Angular and React.js",
+        "Created high-fidelity prototypes in Figma"
+      ],
+      "impact_metrics": [
+        {
+          "metric": "interactivity_and_responsiveness_increase",
+          "value": "30%"
+        },
+        {
+          "metric": "project_delivery_speed_increase",
+          "value": "25%"
+        },
+        {
+          "metric": "user_satisfaction_increase",
+          "value": "40%"
+        }
+      ],
+      "technologies": [
+        "Angular",
+        "React.js",
+        "Figma",
+        "Scrum",
+        "Agile"
+      ]
+    },
+    {
+      "company": "AVATAR Soluções Digitais",
+      "position": "Junior Software Developer | Full Stack",
+      "employment_type": null,
+      "location": "Fortaleza, Ceará, Brazil",
+      "start_date": "2019-01",
+      "end_date": "2020-01",
+      "is_current": false,
+      "duration_text": "January 2019 - January 2020 (1 year 1 month)",
+      "description": "Increased the client's operational efficiency by 40% through the design and development of a full-stack e-commerce application using Next.js and Express.js. Enhanced security and accessibility for over 1,000 users by implementing a robust user management system. Improved application performance and load times by 35% using Next.js SSR and SSG. Reduced deployment time by 20% through learning and implementing Docker technology. Achieved a client satisfaction rate of 95% by maintaining open communication aligned to business needs.",
+      "highlights": [
+        "Built a full-stack e-commerce application",
+        "Implemented user management for 1,000+ users",
+        "Used SSR and SSG with Next.js",
+        "Improved deployment process with Docker"
+      ],
+      "impact_metrics": [
+        {
+          "metric": "operational_efficiency_increase",
+          "value": "40%"
+        },
+        {
+          "metric": "users_impacted",
+          "value": "1000+"
+        },
+        {
+          "metric": "performance_and_load_time_improvement",
+          "value": "35%"
+        },
+        {
+          "metric": "deployment_time_reduction",
+          "value": "20%"
+        },
+        {
+          "metric": "client_satisfaction_rate",
+          "value": "95%"
+        }
+      ],
+      "technologies": [
+        "Next.js",
+        "Express.js",
+        "Docker",
+        "SSR",
+        "SSG"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Federal de Educação, Ciência e Tecnologia do Ceará",
+      "degree": "Bachelor of Engineering - BE",
+      "field_of_study": "Computer Engineering",
+      "start_date": "2021-03",
+      "end_date": "2026-03",
+      "is_current": false
+    },
+    {
+      "institution": "Descomplica Faculdade Digital",
+      "degree": "Master of Business Administration - MBA",
+      "field_of_study": "Information Security",
+      "start_date": "2025-04",
+      "end_date": "2026-04",
+      "is_current": false
+    },
+    {
+      "institution": "Descomplica Faculdade Digital",
+      "degree": "Technologist",
+      "field_of_study": "Systems for internet",
+      "start_date": "2022-01",
+      "end_date": "2024-06",
+      "is_current": false
+    },
+    {
+      "institution": "Rocketseat",
+      "degree": "Full Stack Development",
+      "field_of_study": null,
+      "start_date": "2022-01",
+      "end_date": "2023-01",
+      "is_current": false
+    },
+    {
+      "institution": "EF English Live",
+      "degree": "Teaching English as a Second or Foreign Language/ESL Language Instructor",
+      "field_of_study": null,
+      "start_date": "2021-01",
+      "end_date": "2022-01",
+      "is_current": false
+    }
+  ],
+  "career_overview": {
+    "current_role": "Senior Software Engineer",
+    "seniority": "Senior",
+    "primary_specialization": "Full Stack Development",
+    "secondary_specializations": [
+      "Front End Engineering",
+      "Design Systems",
+      "Developer Experience",
+      "Technical Leadership"
+    ],
+    "years_of_experience_text": "over six years",
+    "industry_experience": [
+      "e-commerce",
+      "finance",
+      "telecommunications",
+      "educational"
+    ]
+  },
+  "core_technologies": {
+    "frontend": [
+      "React",
+      "Next.js",
+      "Vite",
+      "Redux Toolkit",
+      "React Query",
+      "Chakra UI",
+      "Tailwind CSS",
+      "Storybook",
+      "Angular",
+      "React.js"
+    ],
+    "mobile": [
+      "React Native",
+      "Expo",
+      "iOS",
+      "Android"
+    ],
+    "backend": [
+      "Node.js",
+      "NestJS",
+      "AdonisJs",
+      "Express.js"
+    ],
+    "databases": [
+      "PostgreSQL"
+    ],
+    "devops_and_tools": [
+      "Docker",
+      "Nginx",
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Jenkins"
+    ],
+    "architecture_and_practices": [
+      "Design Systems",
+      "Micro Frontends",
+      "Monorepo",
+      "Nx",
+      "Scrum",
+      "Agile",
+      "SSR",
+      "SSG",
+      "SOLID"
+    ],
+    "testing": [
+      "Jest",
+      "React Testing Library"
+    ],
+    "cloud_and_api": [
+      "AWS",
+      "Google Cloud Platform",
+      "GraphQL",
+      "Swagger"
+    ]
+  },
+  "notable_achievements": [
+    {
+      "title": "Design System at Banco do Nordeste",
+      "impact": "40% increase in development efficiency and 25% reduction in front-end development time"
+    },
+    {
+      "title": "Developer documentation platform",
+      "impact": "30% increased developer productivity and 20% reduced onboarding time"
+    },
+    {
+      "title": "Automated financial data processing system",
+      "impact": "60% increase in data analysis efficiency"
+    }
+  ],
+  "keywords_for_search": [
+    "Senior Software Engineer",
+    "Tech Leader",
+    "Full Stack Developer",
+    "ReactJS",
+    "NodeJs",
+    "NextJS",
+    "TypeScript",
+    "NestJs",
+    "React Native",
+    "Design Systems",
+    "Storybook",
+    "Tailwind CSS",
+    "SOLID",
+    "Swagger",
+    "Banco do Nordeste",
+    "Docusaurus",
+    "Nx",
+    "Socket.IO",
+    "Redux Toolkit",
+    "Expo"
+  ],
+  "structured_summary": {
+    "elevator_pitch_pt_br": "Engenheiro de Software Sênior com mais de 6 anos de experiência em desenvolvimento Full Stack, com forte atuação em React, React Native, Node.js, TypeScript e NestJS. Possui histórico em design systems, documentação para desenvolvedores, produtos financeiros, e-commerce e aplicações escaláveis, entregando ganhos mensuráveis de eficiência, produtividade e experiência do usuário.",
+    "elevator_pitch_en_us": "Senior Software Engineer with over six years of experience building scalable full-stack applications, with strong expertise in React, React Native, Node.js, TypeScript, and NestJS. Proven track record in design systems, developer documentation, financial products, e-commerce, and scalable digital experiences, delivering measurable gains in efficiency, productivity, and user experience."
+  },
+  "metadata": {
+    "profile_language": "English",
+    "json_generated_by": "ChatGPT",
+    "completeness": "High, limited to visible data in the provided PDF",
+    "fields_not_available_in_pdf": [
+      "profile photo",
+      "custom about links",
+      "full certifications metadata",
+      "recommendations",
+      "projects section outside experience",
+      "licenses URLs",
+      "exact employment type",
+      "skills endorsements",
+      "linkedin profile ID"
+    ]
+  }
+}

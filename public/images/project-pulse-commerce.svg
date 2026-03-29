@@ -1,0 +1,10 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pulse Commerce">
+  <rect width="640" height="420" rx="36" fill="#0B0B0F"/>
+  <rect x="36" y="36" width="568" height="348" rx="24" fill="#12121E"/>
+  <rect x="76" y="78" width="488" height="56" rx="16" fill="#1F1732"/>
+  <circle cx="108" cy="106" r="12" fill="#C4B5FD"/>
+  <rect x="130" y="98" width="182" height="16" rx="8" fill="#E9D5FF"/>
+  <rect x="76" y="160" width="150" height="184" rx="18" fill="#7C3AED" opacity="0.85"/>
+  <rect x="244" y="160" width="150" height="184" rx="18" fill="#A855F7" opacity="0.58"/>
+  <rect x="412" y="160" width="150" height="184" rx="18" fill="#7C3AED" opacity="0.72"/>
+</svg>
