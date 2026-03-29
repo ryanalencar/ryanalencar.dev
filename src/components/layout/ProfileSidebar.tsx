@@ -10,7 +10,7 @@ export function ProfileSidebar({ t }: ProfileSidebarProps) {
     <aside className="lg:sticky lg:top-24 lg:self-start lg:pr-5">
       <div className="profile-card flex flex-col gap-6 rounded-3xl border border-violet-400/35 p-5 lg:h-160 lg:p-6">
         <img
-          src="/images/avatar-ryan.svg"
+          src="/images/profile.png"
           alt={t.profile.avatarAlt}
           width={320}
           height={320}
@@ -19,12 +19,12 @@ export function ProfileSidebar({ t }: ProfileSidebarProps) {
 
         <div className="space-y-3 text-center">
           <h1 className="text-4xl font-black tracking-tight text-white light:text-[#14141f]">{t.profile.name}</h1>
-          <p className="mx-auto inline-flex rounded-full bg-violet-500/20 px-3 py-1 text-sm font-semibold text-violet-200 light:bg-violet-100 light:text-violet-800">
+          {/* <p className="mx-auto inline-flex rounded-full bg-violet-500/20 px-3 py-1 text-sm font-semibold text-violet-200 light:bg-violet-100 light:text-violet-800">
             {t.profile.role}
-          </p>
+          </p> */}
           <p className="text-sm text-slate-300 light:text-slate-700">{t.profile.bio}</p>
           <p className="text-xs text-slate-400 light:text-slate-600">{t.profile.location}</p>
-          <p className="text-xs font-semibold uppercase tracking-[0.12em] text-violet-300 light:text-violet-800">{t.profile.availability}</p>
+          {/* <p className="text-xs font-semibold uppercase tracking-[0.12em] text-violet-300 light:text-violet-800">{t.profile.availability}</p> */}
         </div>
 
         <nav aria-label={t.labels.socialLinks} className="mt-auto flex items-center justify-center gap-3">

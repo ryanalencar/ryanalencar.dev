@@ -1,5 +1,5 @@
 type IconProps = {
-  name: 'github' | 'linkedin' | 'twitter' | 'email' | 'arrow' | 'link'
+  name: 'github' | 'linkedin' | 'instagram' | 'email' | 'arrow' | 'link'
   className?: string
 }
 
@@ -20,10 +20,12 @@ export function Icon({ name, className = 'h-4 w-4' }: IconProps) {
     )
   }
 
-  if (name === 'twitter') {
+  if (name === 'instagram') {
     return (
       <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
-        <path d="m18.9 2 2.85 0-6.22 7.1L23 22h-5.9l-4.63-6.3L6.95 22H4.1l6.66-7.62L1 2h6.05l4.19 5.72L18.9 2Zm-1.04 18h1.63L6.17 3.9H4.42L17.86 20Z" />
+        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0-2C3.47 0 .01 3.46.01 7.74v8.52C-.01 20.53 3.45 24 7.73 24h8.54c4.28-.01 7.74-3.47 7.74-7.75V7.74C24 .01 20.53-.01 16.25-.01h-8.5Z" />
+        <path d="M12 7.25a4.75 4.75 0 1 0 0 9.5 4.75 4.75 0 0 0 0-9.5Zm0 7.83a3.08 3.08 0 1 1 .001-6.161A3.08 3.08 0 0 1 12 15.08Z" />
+        <circle cx="16.5" cy="7.5" r="1.5" />
       </svg>
     )
   }

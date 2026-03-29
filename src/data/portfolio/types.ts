@@ -4,7 +4,7 @@ export type SocialLink = {
   label: string
   url: string
   ariaLabel: string
-  icon: 'github' | 'linkedin' | 'twitter' | 'email'
+  icon: 'github' | 'linkedin' | 'instagram' | 'email'
 }
 
 export type PortfolioTranslation = {
