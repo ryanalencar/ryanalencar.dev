@@ -8,13 +8,13 @@ type ProfileSidebarProps = {
 export function ProfileSidebar({ t }: ProfileSidebarProps) {
   return (
     <aside className="lg:sticky lg:top-24 lg:self-start lg:pr-5">
-      <div className="profile-card flex flex-col gap-6 overflow-hidden rounded-3xl p-5 lg:min-h-160 lg:p-6">
+      <div className="profile-card mx-auto w-full max-w-[22rem] flex flex-col gap-4 overflow-hidden rounded-3xl p-4 sm:max-w-[24rem] sm:gap-5 sm:p-5 lg:max-w-none lg:min-h-160 lg:gap-6 lg:p-6">
         <img
           src="/images/profile.png"
           alt={t.profile.avatarAlt}
           width={320}
           height={320}
-          className="h-auto w-full max-h-110 rounded-2xl object-cover object-top"
+          className="mx-auto h-auto w-full max-h-72 max-w-72 rounded-2xl object-cover object-top sm:max-h-96 sm:max-w-96 md:max-h-110 md:max-w-none"
         />
 
         <div className="space-y-3 text-center">
