@@ -6,6 +6,8 @@ type RecentProjectsProps = {
   t: PortfolioTranslation
 }
 
+const projectFallbackThumbnail = '/images/project-fallback.svg'
+
 export function RecentProjects({ t }: RecentProjectsProps) {
   return (
     <section id="projects" className="reveal space-y-5">
@@ -22,13 +24,22 @@ export function RecentProjects({ t }: RecentProjectsProps) {
             className="group project-item"
           >
             <img
-              src={project.thumbnail}
-              alt={project.thumbnailAlt}
+              src={project.thumbnail.trim() ? project.thumbnail : projectFallbackThumbnail}
+              alt={project.thumbnailAlt || `Thumbnail do projeto ${project.name}`}
               loading="lazy"
               decoding="async"
               width={140}
               height={90}
               className="h-20 w-32 rounded-xl border border-white/10 object-cover light:border-slate-300"
+              onError={(event) => {
+                const image = event.currentTarget
+
+                if (image.src.endsWith('project-fallback.svg')) {
+                  return
+                }
+
+                image.src = projectFallbackThumbnail
+              }}
             />
             <div className="flex-1">
               <h3 className="text-base font-bold text-white light:text-[#1a1a27]">{project.name}</h3>
