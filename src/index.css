@@ -79,7 +79,7 @@
 
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
@@ -90,6 +90,12 @@
 
   .reveal {
     animation: none !important;
+  }
+
+  .scroll-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }
 
@@ -137,7 +143,7 @@
   }
 
   [data-theme='light'] .btn-cta-secondary {
-    @apply text-violet-700;
+    @apply border-violet-300 text-violet-700 hover:bg-violet-200 hover:text-violet-900;
   }
 
   .project-item {
@@ -145,7 +151,7 @@
   }
 
   [data-theme='light'] .project-item {
-    @apply border-slate-300/90 bg-white text-slate-800;
+    @apply border-slate-300/90 bg-white text-slate-800 hover:border-violet-300 hover:shadow-[0_0_14px_rgba(124,58,237,0.2)];
   }
 
   .input-field {
@@ -158,5 +164,17 @@
 
   .reveal {
     animation: reveal-up 0.55s ease both;
+  }
+
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+    will-change: opacity, transform;
+  }
+
+  .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: none;
   }
 }

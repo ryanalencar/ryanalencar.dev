@@ -2,10 +2,9 @@ import { useEffect, useMemo, useState } from 'react'
 import type { FormEvent } from 'react'
 import { ProfileSidebar } from './components/layout/ProfileSidebar'
 import { TopControls } from './components/layout/TopControls'
-import { DesignThoughts } from './components/sections/DesignThoughts'
+import { EducationTimeline } from './components/sections/EducationTimeline'
 import { ExperienceTimeline } from './components/sections/ExperienceTimeline'
 import { HeroShowcase } from './components/sections/HeroShowcase'
-import { PremiumTools } from './components/sections/PremiumTools'
 import { RecentProjects } from './components/sections/RecentProjects'
 import { WorkTogether } from './components/sections/WorkTogether'
 import { portfolioContent, localeOptions } from './data/portfolio/data'
@@ -52,6 +51,37 @@ function App() {
     updateMeta('twitter:description', t.seo.description)
   }, [locale, t.seo.description, t.seo.keywords, t.seo.title])
 
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return
+    }
+
+    const sections = document.querySelectorAll<HTMLElement>('.scroll-reveal')
+    if (sections.length === 0) {
+      return
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      {
+        root: null,
+        threshold: 0.15,
+        rootMargin: '0px 0px -8% 0px',
+      },
+    )
+
+    sections.forEach((section) => observer.observe(section))
+
+    return () => observer.disconnect()
+  }, [])
+
   function handleContactSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
@@ -64,42 +94,33 @@ function App() {
 
   return (
     <>
-      <a
-        className="absolute left-3 -top-12 z-50 rounded-xl bg-violet-600 px-4 py-2 font-bold text-white focus:top-3"
-        href="#main-content"
-      >
-        {t.labels.skip}
-      </a>
-
       <TopControls
         locale={locale}
         isDarkMode={isDarkMode}
         localeOptions={localeOptions}
+        navLabels={t.nav}
         onLocaleChange={setLocale}
         onThemeToggle={() => setIsDarkMode((current) => !current)}
         labels={t.labels}
       />
 
-      <main id="main-content" className="mx-auto grid w-[min(1240px,96vw)] gap-5 px-2 py-5 lg:grid-cols-[330px_1fr] lg:py-8 lg:pt-36 lg:pr-32 lg:pb-8">
+      <main className="mx-auto grid w-[min(1240px,96vw)] gap-5 px-2 py-5 lg:grid-cols-[330px_1fr] lg:py-8 lg:pt-36 lg:pr-32 lg:pb-8">
         <ProfileSidebar t={t} />
 
-        <div className="grid gap-5">
-          <section id="hero">
+        <div className="grid gap-10 md:gap-12 lg:-gap-16">
+          <section id="hero" className="scroll-reveal">
             <HeroShowcase t={t} />
           </section>
-          <section id="projects">
+          <section id="projects" className="scroll-reveal">
             <RecentProjects t={t} />
           </section>
-          <section id="experience">
+          <section id="experience" className="scroll-reveal">
             <ExperienceTimeline t={t} />
           </section>
-          <section id="tools">
-            <PremiumTools t={t} />
+          <section id="education" className="scroll-reveal">
+            <EducationTimeline t={t} />
           </section>
-          <section id="thoughts">
-            <DesignThoughts t={t} />
-          </section>
-          <section id="contact">
+          <section id="contact" className="scroll-reveal">
             <WorkTogether t={t} onSubmit={handleContactSubmit} />
           </section>
         </div>
