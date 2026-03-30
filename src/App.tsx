@@ -28,7 +28,7 @@ function App() {
       return true
     }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
+    return true
   })
 
   const t = useMemo(() => portfolioContent[locale], [locale])
