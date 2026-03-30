@@ -14,7 +14,6 @@ export type PortfolioTranslation = {
     keywords: string
   }
   labels: {
-    skip: string
     language: string
     theme: string
     dark: string
@@ -37,8 +36,7 @@ export type PortfolioTranslation = {
     hero: string
     projects: string
     experience: string
-    tools: string
-    thoughts: string
+    education: string
     contact: string
   }
   hero: {
@@ -48,10 +46,6 @@ export type PortfolioTranslation = {
     ctaPrimary: string
     ctaSecondary: string
     metrics: Array<{ value: string; label: string }>
-    creativeCard: {
-      title: string
-      items: string[]
-    }
     stackCard: {
       title: string
       categories: Array<{
@@ -81,24 +75,23 @@ export type PortfolioTranslation = {
       role: string
       period: string
       summary: string
+      highlights: string[]
+      impactMetrics: Array<{
+        metric: string
+        value: string
+      }>
+      technologies: string[]
     }>
   }
-  tools: {
+  education: {
     title: string
     subtitle: string
     intro: string
-    list: string[]
-  }
-  thoughts: {
-    title: string
-    subtitle: string
-    intro: string
-    posts: Array<{
-      title: string
-      description: string
-      date: string
-      readTime: string
-      href: string
+    timeline: Array<{
+      institution: string
+      degree: string
+      fieldOfStudy: string
+      period: string
     }>
   }
   contact: {
