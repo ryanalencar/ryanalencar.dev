@@ -1,5 +1,6 @@
 import type { SubmitEvent } from 'react'
 import { Icon } from '../Icon'
+import { SectionHeading } from '../SectionHeading'
 import type { PortfolioTranslation } from "../../data/portfolio/types"
 
 type WorkTogetherProps = {
@@ -10,10 +11,7 @@ type WorkTogetherProps = {
 export function WorkTogether({ t, onSubmit }: WorkTogetherProps) {
   return (
     <section id="contact" className="reveal space-y-5">
-      <header>
-        <h2 className="section-title">{t.contact.title}</h2>
-        <p className="section-intro">{t.contact.intro}</p>
-      </header>
+      <SectionHeading title={t.contact.title} subtitle={t.contact.subtitle} description={t.contact.intro} />
 
       <div className="grid gap-4 md:grid-cols-[0.85fr_1.15fr]">
         <article className="rounded-3xl border border-violet-400/40 bg-violet-500/10 p-5 light:border-violet-300/70 light:bg-violet-50">

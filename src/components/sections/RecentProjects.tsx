@@ -1,4 +1,5 @@
 import { Icon } from '../Icon'
+import { SectionHeading } from '../SectionHeading'
 import type { PortfolioTranslation } from "../../data/portfolio/types"
 
 type RecentProjectsProps = {
@@ -8,10 +9,7 @@ type RecentProjectsProps = {
 export function RecentProjects({ t }: RecentProjectsProps) {
   return (
     <section id="projects" className="reveal space-y-5">
-      <header>
-        <h2 className="section-title">{t.projects.title}</h2>
-        <p className="section-intro">{t.projects.intro}</p>
-      </header>
+      <SectionHeading title={t.projects.title} subtitle={t.projects.subtitle} description={t.projects.intro} />
 
       <div className="grid gap-3">
         {t.projects.list.map((project) => (

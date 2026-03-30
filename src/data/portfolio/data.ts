@@ -69,14 +69,15 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
       contact: 'Contato',
     },
     hero: {
-      title: 'SOFTWARE ENGINEER',
-      subtitle: 'Building scalable, high-performance digital products',
-      ctaPrimary: 'Let’s Work Together',
+      title: 'SOFTWARE',
+      subtitle: 'ENGINEER',
+      description: 'Apaixonado por criar experiências de usuário intuitivas e envolventes. Especializado em transformar ideias em produtos belamente confeccionados.',
+      ctaPrimary: 'Vamos trabalhar juntos',
       ctaSecondary: 'Ver projetos recentes',
       metrics: [
-        { value: '+12', label: 'years experience' },
+        { value: '+6', label: 'years experience' },
         { value: '+46', label: 'projects completed' },
-        { value: '+20', label: 'clients worldwide' },
+        { value: '+10', label: 'clients worldwide' },
       ],
       creativeCard: {
         title: 'Creative Skills',
@@ -84,11 +85,45 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
       },
       stackCard: {
         title: 'Tech Stack',
-        items: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Figma'],
+        categories: [
+          {
+            name: 'Foundational',
+            items: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
+          },
+          {
+            name: 'Frontend',
+            items: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'Redux Toolkit', 'Storybook']
+          },
+          {
+            name: 'Mobile',
+            items: ['React Native', 'Expo']
+          },
+          {
+            name: 'Backend',
+            items: ['Node.js', 'NestJS', 'AdonisJS']
+          },
+          {
+            name: 'DevOps & Tools',
+            items: ['Git', 'GitHub', 'GitLab', 'Docker', 'Jenkins']
+          },
+          {
+            name: 'Testing',
+            items: ['Jest', 'React Testing Library']
+          },
+          {
+            name: 'Cloud & API',
+            items: ['AWS', 'Google Cloud Platform', 'GraphQL']
+          },
+          {
+            name: 'Architecture',
+            items: ['Design Systems']
+          }
+        ],
       },
     },
     projects: {
       title: 'RECENT PROJECTS',
+      subtitle: 'SELECTED WORK',
       intro: 'Projetos orientados a impacto, escalabilidade e resultados de negócio.',
       list: [
         {
@@ -116,6 +151,8 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     experience: {
       title: '12 YEARS OF EXPERIENCE',
+      subtitle: 'PROFESSIONAL JOURNEY',
+      intro: 'Evolução em produto, arquitetura e entrega de software em cenários de alta complexidade.',
       timeline: [
         {
           company: 'Nubank',
@@ -139,11 +176,13 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     tools: {
       title: 'PREMIUM TOOLS',
+      subtitle: 'WORKFLOW STACK',
       intro: 'Ferramentas que aceleram discovery, design e entrega em produção.',
       list: ['Framer', 'Figma', 'Notion', 'ChatGPT', 'Next.js'],
     },
     thoughts: {
       title: 'DESIGN THOUGHTS',
+      subtitle: 'INSIGHTS & WRITING',
       intro: 'Publicações sobre engenharia, produto e experiência digital.',
       posts: [
         {
@@ -171,6 +210,7 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     contact: {
       title: 'LET’S WORK TOGETHER',
+      subtitle: 'START A PROJECT',
       intro: 'Conte um pouco sobre o desafio e eu retorno com próximos passos objetivos.',
       cardDescription: 'Atuação consultiva e execução hands-on para acelerar resultados.',
       form: {
@@ -253,14 +293,15 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
       contact: 'Contact',
     },
     hero: {
-      title: 'SOFTWARE ENGINEER',
-      subtitle: 'Building scalable, high-performance digital products',
+      title: 'SOFTWARE',
+      subtitle: 'ENGINEER',
+      description: 'Passionate about creating intuitive and engaging user experiences. Specialize in transforming ideas into beautifully crafted products.',
       ctaPrimary: 'Let’s Work Together',
       ctaSecondary: 'View recent projects',
       metrics: [
-        { value: '+12', label: 'years experience' },
+        { value: '+6', label: 'years experience' },
         { value: '+46', label: 'projects completed' },
-        { value: '+20', label: 'clients worldwide' },
+        { value: '+10', label: 'clients worldwide' },
       ],
       creativeCard: {
         title: 'Creative Skills',
@@ -268,11 +309,45 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
       },
       stackCard: {
         title: 'Tech Stack',
-        items: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Figma'],
+        categories: [
+          {
+            name: 'Foundational',
+            items: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
+          },
+          {
+            name: 'Frontend',
+            items: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'Redux Toolkit', 'Storybook']
+          },
+          {
+            name: 'Mobile',
+            items: ['React Native', 'Expo']
+          },
+          {
+            name: 'Backend',
+            items: ['Node.js', 'NestJS', 'AdonisJS']
+          },
+          {
+            name: 'DevOps & Tools',
+            items: ['Git', 'GitHub', 'GitLab', 'Docker', 'Jenkins']
+          },
+          {
+            name: 'Testing',
+            items: ['Jest', 'React Testing Library']
+          },
+          {
+            name: 'Cloud & API',
+            items: ['AWS', 'Google Cloud Platform', 'GraphQL']
+          },
+          {
+            name: 'Architecture',
+            items: ['Design Systems']
+          }
+        ],
       },
     },
     projects: {
       title: 'RECENT PROJECTS',
+      subtitle: 'SELECTED WORK',
       intro: 'Projects focused on impact, scalability, and measurable business outcomes.',
       list: [
         {
@@ -300,6 +375,8 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     experience: {
       title: '12 YEARS OF EXPERIENCE',
+      subtitle: 'PROFESSIONAL JOURNEY',
+      intro: 'Career path focused on product quality, scalable architecture, and high-impact delivery.',
       timeline: [
         {
           company: 'Nubank',
@@ -323,11 +400,13 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     tools: {
       title: 'PREMIUM TOOLS',
+      subtitle: 'WORKFLOW STACK',
       intro: 'Tools that accelerate discovery, design, and production delivery.',
       list: ['Framer', 'Figma', 'Notion', 'ChatGPT', 'Next.js'],
     },
     thoughts: {
       title: 'DESIGN THOUGHTS',
+      subtitle: 'INSIGHTS & WRITING',
       intro: 'Articles about engineering, product strategy, and digital experience.',
       posts: [
         {
@@ -355,6 +434,7 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     contact: {
       title: 'LET’S WORK TOGETHER',
+      subtitle: 'START A PROJECT',
       intro: 'Share your challenge and I will reply with clear next steps.',
       cardDescription: 'Consulting plus hands-on execution to accelerate outcomes.',
       form: {
@@ -432,14 +512,15 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
       contact: 'Contacto',
     },
     hero: {
-      title: 'SOFTWARE ENGINEER',
-      subtitle: 'Building scalable, high-performance digital products',
-      ctaPrimary: 'Let’s Work Together',
+      title: 'SOFTWARE',
+      subtitle: 'ENGINEER',
+      description: 'Apasionado por crear experiencias de usuario intuitivas y atractivas. Especializado en transformar ideas en productos hermosamente elaborados.',
+      ctaPrimary: 'Trabajemos juntos',
       ctaSecondary: 'Ver proyectos recientes',
       metrics: [
-        { value: '+12', label: 'years experience' },
+        { value: '+6', label: 'years experience' },
         { value: '+46', label: 'projects completed' },
-        { value: '+20', label: 'clients worldwide' },
+        { value: '+10', label: 'clients worldwide' },
       ],
       creativeCard: {
         title: 'Creative Skills',
@@ -447,11 +528,45 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
       },
       stackCard: {
         title: 'Tech Stack',
-        items: ['React', 'Next.js', 'TypeScript', 'Node.js', 'Figma'],
+        categories: [
+          {
+            name: 'Foundational',
+            items: ['HTML', 'CSS', 'JavaScript', 'TypeScript']
+          },
+          {
+            name: 'Frontend',
+            items: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'Redux Toolkit', 'Storybook']
+          },
+          {
+            name: 'Mobile',
+            items: ['React Native', 'Expo']
+          },
+          {
+            name: 'Backend',
+            items: ['Node.js', 'NestJS', 'AdonisJS']
+          },
+          {
+            name: 'DevOps & Tools',
+            items: ['Git', 'GitHub', 'GitLab', 'Docker', 'Jenkins']
+          },
+          {
+            name: 'Testing',
+            items: ['Jest', 'React Testing Library']
+          },
+          {
+            name: 'Cloud & API',
+            items: ['AWS', 'Google Cloud Platform', 'GraphQL']
+          },
+          {
+            name: 'Architecture',
+            items: ['Design Systems']
+          }
+        ],
       },
     },
     projects: {
       title: 'RECENT PROJECTS',
+      subtitle: 'SELECTED WORK',
       intro: 'Proyectos enfocados en impacto, escalabilidad y resultados de negocio medibles.',
       list: [
         {
@@ -479,6 +594,8 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     experience: {
       title: '12 YEARS OF EXPERIENCE',
+      subtitle: 'PROFESSIONAL JOURNEY',
+      intro: 'Trayectoria enfocada en calidad de producto, arquitectura escalable y entrega de alto impacto.',
       timeline: [
         {
           company: 'Nubank',
@@ -502,11 +619,13 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     tools: {
       title: 'PREMIUM TOOLS',
+      subtitle: 'WORKFLOW STACK',
       intro: 'Herramientas que aceleran discovery, diseño y entrega en producción.',
       list: ['Framer', 'Figma', 'Notion', 'ChatGPT', 'Next.js'],
     },
     thoughts: {
       title: 'DESIGN THOUGHTS',
+      subtitle: 'INSIGHTS & WRITING',
       intro: 'Publicaciones sobre ingeniería, producto y experiencia digital.',
       posts: [
         {
@@ -534,6 +653,7 @@ export const portfolioContent: Record<Locale, PortfolioTranslation> = {
     },
     contact: {
       title: 'LET’S WORK TOGETHER',
+      subtitle: 'START A PROJECT',
       intro: 'Comparte tu desafío y responderé con próximos pasos claros.',
       cardDescription: 'Consultoría y ejecución hands-on para acelerar resultados.',
       form: {

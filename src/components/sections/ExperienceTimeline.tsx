@@ -1,4 +1,5 @@
 import type { PortfolioTranslation } from "../../data/portfolio/types"
+import { SectionHeading } from '../SectionHeading'
 
 type ExperienceTimelineProps = {
   t: PortfolioTranslation
@@ -7,9 +8,7 @@ type ExperienceTimelineProps = {
 export function ExperienceTimeline({ t }: ExperienceTimelineProps) {
   return (
     <section id="experience" className="reveal space-y-5" aria-label={t.labels.timeline}>
-      <header>
-        <h2 className="section-title">{t.experience.title}</h2>
-      </header>
+      <SectionHeading title={t.experience.title} subtitle={t.experience.subtitle} description={t.experience.intro} />
 
       <ol className="relative ml-2 grid gap-5 border-l border-violet-500/35 pl-6">
         {t.experience.timeline.map((item) => (

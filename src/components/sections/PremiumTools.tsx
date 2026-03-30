@@ -1,4 +1,5 @@
 import type { PortfolioTranslation } from "../../data/portfolio/types"
+import { SectionHeading } from '../SectionHeading'
 
 type PremiumToolsProps = {
   t: PortfolioTranslation
@@ -7,10 +8,7 @@ type PremiumToolsProps = {
 export function PremiumTools({ t }: PremiumToolsProps) {
   return (
     <section id="tools" className="reveal space-y-5">
-      <header>
-        <h2 className="section-title">{t.tools.title}</h2>
-        <p className="section-intro">{t.tools.intro}</p>
-      </header>
+      <SectionHeading title={t.tools.title} subtitle={t.tools.subtitle} description={t.tools.intro} />
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
         {t.tools.list.map((tool) => (

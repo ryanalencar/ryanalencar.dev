@@ -1,5 +1,6 @@
 import type { PortfolioTranslation } from '../../data/portfolio/types'
 import { Icon } from '../Icon'
+import { SectionHeading } from '../SectionHeading'
 
 type DesignThoughtsProps = {
   t: PortfolioTranslation
@@ -8,10 +9,7 @@ type DesignThoughtsProps = {
 export function DesignThoughts({ t }: DesignThoughtsProps) {
   return (
     <section id="thoughts" className="reveal space-y-5">
-      <header>
-        <h2 className="section-title">{t.thoughts.title}</h2>
-        <p className="section-intro">{t.thoughts.intro}</p>
-      </header>
+      <SectionHeading title={t.thoughts.title} subtitle={t.thoughts.subtitle} description={t.thoughts.intro} />
 
       <div className="grid gap-3">
         {t.thoughts.posts.map((post) => (
