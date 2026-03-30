@@ -14,7 +14,7 @@ export function SectionHeading({ title, subtitle, description }: SectionHeadingP
         {subtitle}
       </h2>
       {description ? (
-        <p className="max-w-120 pt-2 text-sm text-slate-300 light:text-slate-700">
+        <p className="max-w-[72ch] pt-2 text-sm text-slate-300 light:text-slate-700">
           {description}
         </p>
       ) : null}

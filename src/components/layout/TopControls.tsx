@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Home, FolderOpen, Briefcase, Wrench, PenTool, Mail, Moon, Sun } from 'lucide-react'
+import { Home, FolderOpen, Briefcase, GraduationCap, Mail, Moon, Sun } from 'lucide-react'
 import type { Locale } from '../../data/portfolio/types'
 
 type NavItem = {
@@ -14,6 +14,13 @@ type TopControlsProps = {
   locale: Locale
   isDarkMode: boolean
   localeOptions: Array<{ code: Locale; label: string }>
+  navLabels: {
+    hero: string
+    projects: string
+    experience: string
+    education: string
+    contact: string
+  }
   labels: {
     language: string
     theme: string
@@ -24,19 +31,11 @@ type TopControlsProps = {
   onThemeToggle: () => void
 }
 
-const navItems: NavItem[] = [
-  { id: 'hero', icon: <Home size={20} />, ariaLabel: 'Home' },
-  { id: 'projects', icon: <FolderOpen size={20} />, ariaLabel: 'Projects' },
-  { id: 'experience', icon: <Briefcase size={20} />, ariaLabel: 'Experience' },
-  { id: 'tools', icon: <Wrench size={20} />, ariaLabel: 'Tools' },
-  { id: 'thoughts', icon: <PenTool size={20} />, ariaLabel: 'Thoughts' },
-  { id: 'contact', icon: <Mail size={20} />, ariaLabel: 'Contact' },
-]
-
 export function TopControls({
   locale,
   isDarkMode,
   localeOptions,
+  navLabels,
   labels,
   onLocaleChange,
   onThemeToggle,
@@ -45,6 +44,13 @@ export function TopControls({
   const [isScrolled, setIsScrolled] = useState(false)
   const observerRef = useRef<IntersectionObserver | null>(null)
   const scrollThreshold = 100
+  const navItems: NavItem[] = [
+    { id: 'hero', icon: <Home size={20} />, ariaLabel: navLabels.hero },
+    { id: 'projects', icon: <FolderOpen size={20} />, ariaLabel: navLabels.projects },
+    { id: 'experience', icon: <Briefcase size={20} />, ariaLabel: navLabels.experience },
+    { id: 'education', icon: <GraduationCap size={20} />, ariaLabel: navLabels.education },
+    { id: 'contact', icon: <Mail size={20} />, ariaLabel: navLabels.contact },
+  ]
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
@@ -101,7 +107,7 @@ export function TopControls({
                 aria-pressed={activeSection === item.id}
                 className={`inline-flex h-11 w-11 items-center justify-center rounded-full border transition-all ${activeSection === item.id
                     ? 'border-violet-400 bg-violet-600 text-white shadow-lg shadow-violet-500/50'
-                    : 'border-white/12 bg-white/5 text-slate-300 hover:border-violet-400/60 hover:bg-violet-500/10 light:border-slate-200 light:text-slate-600 light:hover:bg-violet-100'
+                    : 'border-white/12 bg-white/5 text-slate-300 hover:border-violet-400/60 hover:bg-violet-500/10 light:border-slate-200 light:text-slate-600 light:hover:border-violet-300 light:hover:bg-violet-200 light:hover:text-violet-800'
                   }`}
               >
                 {item.icon}
@@ -125,7 +131,7 @@ export function TopControls({
                 className={
                   locale === option.code
                     ? 'rounded-full bg-violet-600 px-3 py-1.5 text-xs font-semibold text-white transition'
-                    : 'rounded-full px-3 py-1.5 text-xs font-semibold text-slate-300 transition hover:bg-violet-500/30 light:text-slate-800'
+                    : 'rounded-full px-3 py-1.5 text-xs font-semibold text-slate-300 transition hover:bg-violet-500/30 light:text-slate-800 light:hover:bg-violet-200 light:hover:text-violet-900'
                 }
               >
                 {option.label}
@@ -138,7 +144,7 @@ export function TopControls({
             onClick={onThemeToggle}
             aria-label={labels.theme}
             aria-pressed={isDarkMode}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition hover:scale-[1.03] light:border-slate-300 light:bg-white"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 transition hover:scale-[1.03] light:border-slate-300 light:bg-white light:hover:border-violet-300 light:hover:bg-violet-100"
           >
             {isDarkMode ? <Sun size={18} className="text-slate-200 light:text-slate-800" /> : <Moon size={18} className="text-slate-200 light:text-slate-800" />}
           </button>
@@ -159,7 +165,7 @@ export function TopControls({
                 aria-pressed={activeSection === item.id}
                 className={`inline-flex h-8 w-8 items-center justify-center rounded-3xl border transition-all ${activeSection === item.id
                     ? 'border-violet-400 bg-violet-600 text-white shadow-lg shadow-violet-500/50'
-                    : 'border-white/12 bg-white/5 text-slate-300 hover:border-violet-400/60 hover:bg-violet-500/10 light:border-slate-200 light:text-slate-600 light:hover:bg-violet-100'
+                    : 'border-white/12 bg-white/5 text-slate-300 hover:border-violet-400/60 hover:bg-violet-500/10 light:border-slate-200 light:text-slate-600 light:hover:border-violet-300 light:hover:bg-violet-200 light:hover:text-violet-800'
                   }`}
               >
                 {item.icon}
@@ -182,7 +188,7 @@ export function TopControls({
               className={
                 locale === option.code
                   ? 'rounded-full bg-violet-600 px-3 py-1 text-xs font-semibold text-white transition'
-                  : 'rounded-full px-3 py-1 text-xs font-semibold text-slate-300 transition hover:bg-violet-500/30 light:text-slate-800'
+                  : 'rounded-full px-3 py-1 text-xs font-semibold text-slate-300 transition hover:bg-violet-500/30 light:text-slate-800 light:hover:bg-violet-200 light:hover:text-violet-900'
               }
             >
               {option.label}
@@ -195,7 +201,7 @@ export function TopControls({
           onClick={onThemeToggle}
           aria-label={labels.theme}
           aria-pressed={isDarkMode}
-          className="inline-flex h-8 w-8 items-center justify-center rounded-3xl border border-white/15 bg-white/5 transition hover:scale-[1.03] light:border-slate-300 light:bg-white"
+          className="inline-flex h-8 w-8 items-center justify-center rounded-3xl border border-white/15 bg-white/5 transition hover:scale-[1.03] light:border-slate-300 light:bg-white light:hover:border-violet-300 light:hover:bg-violet-100"
         >
           {isDarkMode ? <Sun size={16} className="text-slate-200 light:text-slate-800" /> : <Moon size={16} className="text-slate-200 light:text-slate-800" />}
         </button>

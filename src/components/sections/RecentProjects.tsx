@@ -34,7 +34,7 @@ export function RecentProjects({ t }: RecentProjectsProps) {
               <h3 className="text-base font-bold text-white light:text-[#1a1a27]">{project.name}</h3>
               <p className="text-xs uppercase tracking-[0.14em] text-violet-300 light:text-violet-800">{project.type}</p>
             </div>
-            <span className="inline-flex rounded-full border border-violet-400/50 p-2 text-violet-200 transition group-hover:bg-violet-500/20">
+            <span className="inline-flex rounded-full border border-violet-400/50 p-2 text-violet-200 transition group-hover:bg-violet-500/20 light:border-violet-300 light:text-violet-700 light:group-hover:bg-violet-200 light:group-hover:text-violet-900">
               <Icon name="link" className="h-4 w-4" />
             </span>
           </a>
